@@ -1,0 +1,14 @@
+syntax = "proto3";
+package pontechain.pontechain;
+
+import "gogoproto/gogo.proto";
+import "pontechain/pontechain/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "pontechain/x/pontechain/types";
+
+// GenesisState defines the pontechain module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}

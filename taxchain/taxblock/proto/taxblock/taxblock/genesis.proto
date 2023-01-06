@@ -1,0 +1,14 @@
+syntax = "proto3";
+package taxblock.taxblock;
+
+import "gogoproto/gogo.proto";
+import "taxblock/taxblock/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "taxblock/x/taxblock/types";
+
+// GenesisState defines the taxblock module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}

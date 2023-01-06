@@ -1,0 +1,21 @@
+version: 1
+accounts:
+  - name: alice
+    mnemonic: "office ladder pyramid process puzzle panther emotion spirit path beach bitter hawk alter opera caught payment bullet weapon habit collect around topic modify father"
+    coins: ["20000000000utax", "200000000stake"]
+  - name: bob
+    mnemonic: "dress fiction any amount vivid steak cage deliver orchard ethics hour lab model snap round social hammer bike near equip mandate bone casino pelican"
+    coins: ["10000000000utax", "100000000stake"]
+validators:
+  - name: alice
+    bonded: "100000000stake"
+client:
+  openapi:
+    path: "docs/static/openapi.yml"
+  typescript:
+    path: "ts-client"
+  vuex:
+    path: "vue/src/store"
+faucet:
+  name: bob
+  coins: ["5000000utax", "100000stake"]
